@@ -3,12 +3,158 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>لوحة تحكم الأهلي السعودي</title>
+<title>Al Ahli Command Center</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#071e18;color:white;font-family:Arial,sans-serif}
+header{background:linear-gradient(135deg,#087448,#043b2a);padding:35px 20px;text-align:center}
+h1{margin:10px 0;font-size:29px}
+header p{color:#d4f5e5}
+nav{display:flex;gap:8px;overflow-x:auto;padding:15px;background:#102d24}
+nav a{color:white;background:#176342;padding:11px;border-radius:10px;text-decoration:none;white-space:nowrap}
+main{max-width:1100px;margin:auto;padding:15px}
+section{margin:25px 0}
+h2{color:#8ae5b0;border-bottom:1px solid #285443;padding-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:15px}
+.card{background:#12372b;border:1px solid #28644a;border-radius:15px;padding:20px}
+.card h3{color:#8ae5b0}
+a{color:#91e9b7}
+footer{text-align:center;padding:25px;color:#b4cfc1}
+small{color:#b4cfc1}
+</style>
 </head>
-<body style="background:#063b2b;color:white;text-align:center;font-family:Arial;padding:40px">
+<body>
+
+<header>
 <h1>💚 النادي الأهلي السعودي 💚</h1>
-<h2>Al Ahli Command Center</h2>
-<p>مرحباً بك في لوحة تحكم الأهلي</p>
-<p>النسخة التجريبية قيد التطوير</p>
+<h2>AL AHLI COMMAND CENTER</h2>
+<p>مركز متابعة الراقي | جدة</p>
+</header>
+
+<nav>
+<a href="#matches">⚽ المباريات</a>
+<a href="#standings">🏆 الترتيب</a>
+<a href="#news">📰 الأخبار</a>
+<a href="#players">👕 اللاعبون</a>
+<a href="#transfers">🔄 الانتقالات</a>
+<a href="#tickets">🎟️ التذاكر</a>
+</nav>
+
+<main>
+
+<section id="matches">
+<h2>⚽ المباريات والنتائج</h2>
+<div class="grid">
+<div class="card">
+<h3>المباريات القادمة</h3>
+<p>تابع مواعيد مباريات الأهلي ونتائجه.</p>
+<a href="https://www.spl.com.sa/" target="_blank">جدول دوري روشن ↗</a>
+</div>
+<div class="card">
+<h3>دوري أبطال آسيا للنخبة</h3>
+<p>المباريات والنتائج الآسيوية.</p>
+<a href="https://www.the-afc.com/" target="_blank">الاتحاد الآسيوي ↗</a>
+</div>
+</div>
+</section>
+
+<section id="standings">
+<h2>🏆 البطولات والترتيب</h2>
+<div class="grid">
+<div class="card">
+<h3>دوري روشن السعودي</h3>
+<p>ترتيب الفرق والنقاط والمواجهات.</p>
+<a href="https://www.spl.com.sa/" target="_blank">عرض الترتيب ↗</a>
+</div>
+<div class="card">
+<h3>النخبة الآسيوية</h3>
+<p>ترتيب البطولة ونتائج الأدوار.</p>
+<a href="https://www.the-afc.com/" target="_blank">عرض البطولة ↗</a>
+</div>
+</div>
+</section>
+
+<section id="news">
+<h2>📰 أخبار الأهلي</h2>
+<div class="grid">
+<div class="card">
+<h3>🟢 الأخبار الرسمية</h3>
+<p>البيانات والإعلانات المؤكدة من النادي.</p>
+<a href="https://www.alahlifc.sa/" target="_blank">موقع الأهلي الرسمي ↗</a>
+</div>
+<div class="card">
+<h3>🟡 التقارير الصحفية</h3>
+<p>أخبار المدرب والتعاقدات مع توضيح المصدر.</p>
+<small>التقارير ليست إعلانات رسمية.</small>
+</div>
+<div class="card">
+<h3>🔴 شائعات الانتقالات</h3>
+<p>متابعة الأخبار غير المؤكدة بشكل منفصل.</p>
+<small>يلزم التحقق قبل نشر أي خبر.</small>
+</div>
+</div>
+</section>
+
+<section id="players">
+<h2>👕 اللاعبون والإحصائيات</h2>
+<div class="grid">
+<div class="card">
+<h3>رياض محرز</h3>
+<p>الأهداف | التمريرات الحاسمة | المشاركات</p>
+<small>الإحصائيات تحتاج ربطًا بمصدر بيانات.</small>
+</div>
+<div class="card">
+<h3>فرانك كيسي</h3>
+<p>الأداء | المشاركات | دقائق اللعب</p>
+<small>تُحدّث البيانات بعد الربط.</small>
+</div>
+<div class="card">
+<h3>جالينو</h3>
+<p>الأداء الهجومي | الأهداف | الصناعة</p>
+<small>تُحدّث البيانات بعد الربط.</small>
+</div>
+</div>
+</section>
+
+<section id="transfers">
+<h2>🔄 الانتقالات والعقود</h2>
+<div class="grid">
+<div class="card">
+<h3>القيم السوقية</h3>
+<p>القيم التقديرية للاعبين ومعلومات الانتقالات.</p>
+<a href="https://www.transfermarkt.com/" target="_blank">Transfermarkt ↗</a>
+</div>
+<div class="card">
+<h3>العقود والبدائل</h3>
+<p>متابعة انتهاء العقود والاحتياجات الفنية والبدائل المحتملة.</p>
+<small>تُضاف البيانات الموثقة لاحقًا.</small>
+</div>
+</div>
+</section>
+
+<section id="tickets">
+<h2>🎟️ التذاكر والملاعب</h2>
+<div class="grid">
+<div class="card">
+<h3>تذاكر مباريات الأهلي</h3>
+<p>التحقق من منافذ البيع الرسمية للمباريات.</p>
+<a href="https://www.alahlifc.sa/" target="_blank">موقع النادي ↗</a>
+</div>
+<div class="card">
+<h3>ملعب الإنماء | جدة</h3>
+<p>مدينة الملك عبدالله الرياضية</p>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=King+Abdullah+Sports+City+Jeddah" target="_blank">📍 الاتجاهات إلى الملعب ↗</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+💚 AL AHLI COMMAND CENTER
+<br><br>
+<small>نسخة تجريبية مستقلة وغير رسمية. البيانات لا تتحدث تلقائيًا بعد.</small>
+</footer>
+
 </body>
 </html>
